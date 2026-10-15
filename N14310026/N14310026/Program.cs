@@ -20,7 +20,7 @@ namespace N14310026
             student2.name = "老王";
             Console.WriteLine("ID:" + student2.id + "Name:" + student2.name);*/
             Student student3 = new Student("N1234567" , "姚");
-            Console.WriteLine("ID:" + student3.id + "Name:" + student3.name);
+            student3.Print();
             Console.ReadLine();
         }
     }
@@ -33,11 +33,15 @@ namespace N14310026
             this.id = id;
             this.name = name;
         }
-     
+        public void Print()
+        {
+            Console.WriteLine("ID:" + this.id + "Name:" + this.name);
+
+        }
     
     
     }
 
-
+   
 
 }
